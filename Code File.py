@@ -41,7 +41,6 @@ plt.xticks(rotation = 45)
 plt.show()
 
 ## Result:
-
 The above plot represents the count plot of protocol column of thr dataset.Also it represents that the protocol column consists of three different classes.Each class consists of similar number of data items.
 
 plt.figure(figsize=(15,6))
@@ -50,7 +49,6 @@ plt.xticks(rotation = 45)
 plt.show()
 
 ## Result:
-
 The above plot represents the count plot of the packet type column of the datset.Also the above plot represents that there are two different classes in the packet type column.And also the control packet type consists of more data items.
 
 plt.figure(figsize=(15,6))
@@ -64,21 +62,17 @@ plt.xticks(rotation = 45)
 plt.show()
 
 # Gender gap in internet usage by area
-
 plt.figure(figsize=(10, 5))
 sns.barplot(data=data, x="Packet Length", y="Packet Type", ci=None, palette="viridis")
-
 plt.title("Bar plot between the packet type and length")
 plt.xlabel("packet length")
 plt.ylabel("packet type")
 plt.show()
 
 ## Result:
-
 The above plot represents the Bar plot between the type of packet and packet length.And also it represents that the control packet consists of more data points.
 
 # Gender gap in internet usage by area
-
 plt.figure(figsize=(10, 5))
 sns.barplot(data=data, x="Log Source", y="Packet Length", ci=None, palette="viridis")
 plt.title("Bar plot between the packet type and Log souce")
@@ -87,12 +81,9 @@ plt.ylabel("packet Length")
 plt.show()
 
 ## Result:
-
 The above plot represents the Bar plot between the Log source column and Packet length columns of the dataset.Also it represents that the both classes of Log Source have almost consists of data points.
 
 ## CONCLUSION:
-
-From the above plots we can conclude that the both the type of attacks are
-happeneing.Moreover the Firewall cyber attacks are happening more comparerd to the server attacks.
-SO the respective authority will precautions to avoid both the attacks. Also we can see that the attacks types are actively involved.
+# From the above plots we can conclude that the both the type of attacks are appeneing.Moreover the Firewall cyber attacks are happening more comparerd to the server attacks.
+## SO the respective authority will precautions to avoid both the attacks. Also we can see that the attacks types are actively involved.
 
