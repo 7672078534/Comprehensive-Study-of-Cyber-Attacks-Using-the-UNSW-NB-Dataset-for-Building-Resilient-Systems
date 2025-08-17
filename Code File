@@ -1,7 +1,6 @@
 ## Comprehensive Study of Cyber Attacks Using the UNSW-NB Dataset for Building Resilient Systems
 
 # importing libraries:
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -10,43 +9,30 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # importing dataset:
-
 data=pd.read_csv("C:\\Users\\venka\\OneDrive\\Desktop\\Projects\\2-2\\cybersecurity_attacks (1).csv")
-
 data.head()
 
 ## DATA PREPROCESSING:
-
 data.info()
-
 data.shape
-
 data.describe()
-
 data.nunique()
-
 data['Log Source'].unique()
 
 ## DATA CLEANING:
-
 data.isnull().sum()
-
 data.duplicated().sum()
-
 data.fillna(np.mean,inplace=True)
 data.isnull().sum()
-
 data['Log Source'].value_counts()
 
 ## EDA(EXPLORATORY DATA ANALYSIS)
-
 plt.figure(figsize=(15,6))
 sns.countplot(x="Log Source",data=data,palette="Set1")
 plt.xticks(rotation = 45)
 plt.show()
 
 ## Result:
-
 # The above plot represents the count plot for the Log Source column of the dataset.Also we can see that the Firewall attacks are happening slightly more compare to the Server attacks.
 
 plt.figure(figsize=(15,6))
